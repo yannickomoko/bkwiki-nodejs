@@ -14,8 +14,7 @@ module.exports.register = function(req, res) {
       lastname: req.body.lastname,
       email: req.body.email,
       phone: req.body.phone,
-      username: today.getTime()+' '+req.body.firstname,
-      reg_number:today.getTime(),
+      username: today.getTime()+' '+req.body.firstname, 
       password: hash,
       created: today,
       modified: today
